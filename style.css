@@ -1,0 +1,302 @@
+/*-----------------------------------------------------*/
+/*Basics*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: #fff;
+    color: #acacac;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/*-----------------------------------------------------*/
+/*Header*/
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.2)),url(img/header_background2.gif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    background-attachment: fixed;
+}
+
+/*-----------------------------------------------------*/
+/*reoccuring*/
+
+.row {
+    max-width: 1500px;
+    margin: 0; 
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom:20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/*-----------------------------------------------------*/
+/*main nav*/
+
+.logo {
+    position: absolute;
+    height: 50px;
+    width: auto;
+    left: 10px;
+}
+
+.insta {
+    position: absolute;
+    height: 30px;
+    width: auto;
+    right: 1%;
+    top: 60px;
+}
+
+.twitter {
+    position: absolute;
+    height: 27px;
+    width: auto;
+    right: 1%;
+    top: 110px;
+}
+
+.list {
+    position: absolute;
+    height: 30px;
+    width: auto;
+    right: 1%;
+    top: 1.5%;
+}
+
+.main-nav {
+    width: 35%;
+    float: center;
+    position: absolute;
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    top: 0px;
+    right: 2%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 5px; 
+}
+
+.main-nav li a:link, 
+.main-nav li a:visited {
+    padding: 10px 10px;
+    color: #727272;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.5s;
+    transition: border-bottom 0.5s;
+    border-radius: 0px;
+}
+
+.main-nav li a:hover, 
+.main-nav li a:active {
+    border-bottom: 2px solid #8b8989;
+    border-radius: 0px;
+}
+
+/*-----------------------------------------------------*/
+/*Section Story*/
+.title-story {
+    margin: 40px 10% 30px 10%;
+}
+
+.story-paragraph {
+    margin: 20px 10% 80px;
+}
+
+
+/*-----------------------------------------------------*/
+/*Section Gallery*/
+.section-gallery {
+    margin: 20px 0px;
+}
+
+.gallery-list li{
+    display: block;
+}
+
+.gallery-list .photo {
+    width: 25%;
+    height: 40vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.gallery-list .photo img{
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    opacity: 1;
+}
+
+.photo img:hover {
+    -webkit-transform: scale(1.23);
+    transform: scale(1.23);
+    opacity: 1;
+}
+
+/*-----------------------------------------------------*/
+/*Section animation*/
+.section-vanimation {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.section {
+  position: relative;
+  max-width: 920px;
+  min-height: 55vh;
+  padding: 5px;
+  margin: auto;
+  margin-top: 140px;
+  background-color: #48c9b0;
+  color: #fff;
+}
+.section.bg-static {
+  background-color: #fff;
+  background-image: url("img/van-scroll-background.png");
+  background-size: cover;
+  background-position: center;
+}
+.section .bg-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 155px;
+  background-image: url("img/van-scrolling.png");
+  background-size: 100%;
+  background-position: center;
+}
+
+/*-----------------------------------------------------*/
+/*Section Build*/
+
+.section-build {
+    margin-top: -50px;
+    margin-bottom: 100px;
+    background-color: #fff;
+}
+
+.title-build {
+    margin-top: 100px;
+    margin: 20px 10%;
+}
+
+.build-paragraph {
+    margin: 20px 2% 30px 10%;
+}
+
+.build-photos {
+    margin-left: 30%;
+}
+
+.build-steps {
+    margin-left: 10%;
+    margin-right: 5%
+}
+
+/*-----------------------------------------------------*/
+/*Section rental*/
+
+.section-rental {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title-rental {
+    margin-top: 100px;
+    margin: 20px 10%;
+}
+
+.rental-paragraph {
+    margin: 20px 10% 100px;
+}
+
+
+.rental-calendar {
+    width: 60%;
+    padding: 10px;
+    margin-left: 20%;
+}
+
+.rental-check-in {
+    width: 100%;
+    padding: 10px;
+    margin-left: 10%
+    
+}
+
+.van-selection-row {
+    padding: 5px;
+    margin: 0 5vw 0 8vw;
+}
+
+.van-selection {
+    float: center;
+    padding: 0px;
+    margin-left: 3vw;
+    width: 22vw;
+}
+
+.van-selection-picture {
+    border-radius: 10px;
+    width: 20vw;
+    height: auto;
+    margin: 22px;
+}
+
+.van-selection-row blockquote {
+   margin-left: 30px;
+}
+
+.google_cal {
+    border-radius: 10px;
+}
+
+/*-----------------------------------------------------*/
+/*State Parks*/
+.section-state-parks {
+    margin: 0px 1% 100px 1%;
+}
+
+.poster {
+    width: 100%;
+}
+
+

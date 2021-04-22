@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: #fff;
+    color: #acacac;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+/*-----------------------------------------------------*/
+/*reoccuring*/
+
+.row {
+    max-width: 1500px;
+    margin: 0; 
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom:20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/*-----------------------------------------------------*/
+/*main nav*/
+
+.logo {
+    position: absolute;
+    height: 50px;
+    width: auto;
+    left: 10px;
+}
+
+.insta {
+    position: absolute;
+    height: 30px;
+    width: auto;
+    right: 1%;
+    top: 60px;
+}
+
+.twitter {
+    position: absolute;
+    height: 27px;
+    width: auto;
+    right: 1%;
+    top: 110px;
+}
+
+.list {
+    position: absolute;
+    height: 30px;
+    width: auto;
+    right: 1%;
+    top: 1.5%;
+}
+
+.main-nav {
+    width: 35%;
+    float: center;
+    position: absolute;
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    top: 0px;
+    right: 2%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 5px; 
+}
+
+.main-nav li a:link, 
+.main-nav li a:visited {
+    padding: 10px 10px;
+    color: #727272;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.5s;
+    transition: border-bottom 0.5s;
+    border-radius: 0px;
+}
+
+.main-nav li a:hover, 
+.main-nav li a:active {
+    border-bottom: 2px solid #8b8989;
+    border-radius: 0px;
+}
+
+/*-----------------------------------------------------*/
+/*tittle*/
+.gallery-tittle {
+    margin: 10px;
+    position: absolute;
+    display: inline;
+    right: 44%;
+    font-size: 200%;
+}
+
+/*----------------------------------------------------*/
+/* photo section*/
+.section-photobomb {
+    margin: 20vh 2vw;
+}
+
+.row .pic {
+    margin: 6vw;
+    margin-bottom: 25vh;
+    display: block;
+    width: 20%;
+    height: 20vh;
+    /*overflow: hidden;*/
+    border-radius: 0px;
+}
+
+.row .pic img{
+    width: 120%;
+    height: auto;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.pic img:hover {
+    -webkit-transform: scale(1.23);
+    transform: scale(1.23);
+    opacity: 1;
+}
